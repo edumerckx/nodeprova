@@ -25,7 +25,7 @@ http.createServer(function(req, res) {
 		res.writeHead(codHttp, {'Content-Type': 'application/json'});
 		res.write(data);
 		res.end();
-	}
+	};
 
 	
 	// recupera método da requisição 
@@ -80,4 +80,4 @@ var getDados = function(req, dispatcher, callback) {
 	});
 
 	callback(usuario, objReq, dispatcher);
-}
+};
